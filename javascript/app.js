@@ -1,5 +1,9 @@
 var myApp = angular.module("myApp", ["ui.router"]);
 myApp.config(function($stateProvider) {
+  $stateProvider.state("index", {
+      url:"",
+      templateUrl: '../view/partials/index.html'
+  });
   $stateProvider.state("users", {
       url: '/users',
       controller: "UserController as users",
