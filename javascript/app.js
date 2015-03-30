@@ -1,13 +1,12 @@
-var myApp = angular.module("myApp", ["ui-router"]);
-myApp.config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider
-    .state("userslist", {
+var myApp = angular.module("myApp", ["ui.router"]);
+myApp.config(function($stateProvider) {
+  $stateProvider.state("users", {
       url: '/users',
       controller: "UserController as users",
-      templateUrl: '../partials/user_index.html'
+      templateUrl: '../view/partials/users_index.html'
    });
 })
 
-myApp.controller("UserController", function(){
-  this.all = [{name:"McFluffyton Von Meowers"}, {name: "Scratchers"},{name:"Pretty Kitty"}];
+myApp.controller("UserController", function($scope){
+  $scope.all = [{name:"McFluffyton Von Meowers"}, {name: "Scratchers"},{name:"Pretty Kitty"}];
 })
