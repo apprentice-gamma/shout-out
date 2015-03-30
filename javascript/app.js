@@ -11,6 +11,6 @@ myApp.config(function($stateProvider) {
    });
 })
 
-myApp.controller("UserController", function($scope){
-  $scope.all = [{name:"McFluffyton Von Meowers"}, {name: "Scratchers"},{name:"Pretty Kitty"}];
+myApp.controller("UserController", function(){
+  this.all = [{name:"McFluffyton Von Meowers"}, {name: "Scratchers"},{name:"Pretty Kitty"}];
 })
