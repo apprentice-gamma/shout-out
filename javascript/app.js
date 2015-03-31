@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp", ["ngRoute"]);
+var myApp = angular.module("myApp", ["ngRoute", "myApp.controllers"]);
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when("/", {
       controller: "MainController",
@@ -14,13 +14,9 @@ myApp.config(['$routeProvider', function($routeProvider) {
    });
    $routeProvider.otherwise({redirectTo: '/'});
 }])
-myApp.controller("MainController", function($scope){
-  $scope.message = "Welcome to meower where we like to cat";
-})
-myApp.controller("UserController", function($scope){
-  $scope.all = [{name:"McFluffyton Von Meowers"}, {name: "Scratchers"},{name:"Pretty Kitty"}];
-})
-myApp.controller("MewController", function($scope){
+
+
+/*myApp.controller("MewController", function($scope){
   $scope.message = "Make a Mew";
   $scope.mewComment = "What are you mewing about?!";
-})
+})*/
