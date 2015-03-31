@@ -1,15 +1,18 @@
 var myApp = angular.module("myApp", ["ngRoute","ngResource"]);
-myApp.config(function($routeProvider) {
-  $routeProvider.when("/index", {
+myApp.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when("/", {
+      controller: "MainController",
       templateUrl: '../view/partials/index.html'
   });
   $routeProvider.when("/users", {
-      controller: "UserController as users",
+      controller: "UserController",
       templateUrl: '../view/partials/users_index.html'
    });
-   $routeProvider({redirectTo: '/explore'});
+   $routeProvider.otherwise({redirectTo: '/'});
+}])
+myApp.controller("MainController", function($scope){
+  $scope.message = "Welcome to meower where we like to cat";
 })
-
-myApp.controller("UserController", function(){
-  this.all = [{name:"McFluffyton Von Meowers"}, {name: "Scratchers"},{name:"Pretty Kitty"}];
+myApp.controller("UserController", function($scope){
+  $scope.all = [{name:"McFluffyton Von Meowers"}, {name: "Scratchers"},{name:"Pretty Kitty"}];
 })
