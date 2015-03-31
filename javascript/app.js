@@ -7,6 +7,7 @@ myApp.config(function($routeProvider) {
       controller: "UserController as users",
       templateUrl: '../view/partials/users_index.html'
    });
+   $routeProvider({redirectTo: '/explore'});
 })
 
 myApp.controller("UserController", function(){
