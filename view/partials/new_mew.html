@@ -1,12 +1,13 @@
-<div>
+<div id = "newMew">
 	<h3>{{message}}</h3>
+	
   <form novalidate class="simple-form">
-    <p>Why:
-    	<textarea class = "form-control" display = "inline-block" ng-model="mewComment" placeholder="{{mewComment}}" />
-    	</p> 
-
-	<div display = "block">
+    <p>Explain yo'self...
+    	<textarea class = "form-control" ng-model="mewComment" placeholder="{{mewComment}}"></textarea>
     	<button class="btn btn-success" type="submit">Mew!</button>
-	</div>
+		<button class="btn btn-warning" type="cancel">Cancel</button>
+    </p> 
+	
   </form>
+  
 </div>
