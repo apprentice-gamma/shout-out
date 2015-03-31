@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp", ["ngRoute","MewController"]);
+var myApp = angular.module("myApp", ["ngRoute"]);
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when("/", {
       controller: "MainController",
@@ -19,4 +19,8 @@ myApp.controller("MainController", function($scope){
 })
 myApp.controller("UserController", function($scope){
   $scope.all = [{name:"McFluffyton Von Meowers"}, {name: "Scratchers"},{name:"Pretty Kitty"}];
+})
+myApp.controller("MewController", function($scope){
+  $scope.message = "Make a Mew";
+  $scope.mewComment = "What are you mewing about?!";
 })
