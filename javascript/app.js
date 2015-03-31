@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp", ["ngRoute"]);
+var myApp = angular.module("myApp", ["ngRoute","MewController"]);
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when("/", {
       controller: "MainController",
@@ -7,6 +7,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when("/users", {
       controller: "UserController",
       templateUrl: '../view/partials/users_index.html'
+   });
+  $routeProvider.when("/mew/new", {
+      controller: "MewController",
+      templateUrl: '../view/partials/new_mew.html'
    });
    $routeProvider.otherwise({redirectTo: '/'});
 }])
