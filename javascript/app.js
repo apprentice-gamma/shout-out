@@ -1,11 +1,9 @@
-var myApp = angular.module("myApp", ["ui.router"]);
-myApp.config(function($stateProvider) {
-  $stateProvider.state("index", {
-      url:"",
+var myApp = angular.module("myApp", ["ngRoute","ngResource"]);
+myApp.config(function($routeProvider) {
+  $routeProvider.when("/index", {
       templateUrl: '../view/partials/index.html'
   });
-  $stateProvider.state("users", {
-      url: '/users',
+  $routeProvider.when("/users", {
       controller: "UserController as users",
       templateUrl: '../view/partials/users_index.html'
    });
