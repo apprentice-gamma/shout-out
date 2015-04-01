@@ -2,11 +2,11 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
 
 body {
-  background-color: #f2f2f2;
+  background-color: #F6E4B6;
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
-    color: #555;
+    color: #181D21;
     line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -14,8 +14,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: #444;
+    font-weight: 500;
+    color: #6B8568;
 }
 
 h1 {
@@ -49,7 +49,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #b7cb1b;
+    color: #6B8568;
     text-decoration: none;
     outline: 0;
 }
@@ -62,8 +62,11 @@ a:after {
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
+.navbar-inverse .navbar-brand {
+  color: #F6E4B6;
+}
 .navbar-inverse .navbar-nav > li > a {
-    color: #c6d550;
+    color: #F6E4B6;
 }
 
 .alignleft {
@@ -87,11 +90,6 @@ a:after {
   background-color: #444;
   border-color: #444;
 }
-
-form {
-  margin: 20px 20px 20px 20px;
-  padding: 10px;
-}
 form.signup {
 	margin-top: 30px;
 }
@@ -103,24 +101,48 @@ form.signup input.form-control:focus {
 	border-color: #fd680e;
 }
 
-#newMew {
-  padding: 10px 10px 10px 10px;
-  margin: 5px 5px 5px 5px;
-}
-
-button {
-  margin: 5px 5px 5px 5px;
-}
 
 /* Nav */
+.navbar-inverse .navbar-nav > .active > a{
+  color: #D45D3D;
+}
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #D45D3D;
+  background-color: #080808;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #6B8568;
+  background-color: transparent;
+}
 
 a.navbar-brand {
-	color: #fff !important;
+	color: #6B8568 !important;
 	font-weight: 900;
 	text-transform: uppercase;
 }
 a.navbar-brand:hover {
-    color: #ddd !important;
+    color: #F6E4B6 !important;
+}
+/*jumbotron*/
+.jumbotron {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #D45D3D;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.container .jumbotron {
+  border-radius: 6px;
 }
 
 /* Header */
@@ -146,8 +168,6 @@ a.navbar-brand:hover {
     background-size: cover;
 }
 
-
-
 #header h1 {
 	margin-top: 60px;
 	margin-bottom: 15px;
@@ -165,11 +185,12 @@ h2.subtitle {
 
 /* footer */
 #footer {
-	background: #fd680e;
+	background: #181D21;
 	padding: 20px 0 5px;
+  border-radius: 4px;
 }
 
 p.copyright {
-	color: #fff;
+	color: #F6E4B6;
 	text-align: center;
 }	
