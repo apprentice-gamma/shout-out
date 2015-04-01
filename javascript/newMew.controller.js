@@ -3,20 +3,16 @@ angular.module('myApp.controllers')
 		var defaultMew = "What are you mewing about?!";
   		$scope.message = "Make a Mew";
   		$scope.mewComment = defaultMew;
-  		$scope.$watch('inputName',function(newVal){
-		  	if(newVal ==="")
-		     	$scope.form.inputName.$pristine = true;
-		});
+  		
+  		$scope.nonEmpty=/^(.+)$/i;
 
-		$scope.isValid = function(mewComment){
+  		$scope.isItEmpty = function(mewComment){
 			var mew = mewComment;
-			if (mew === "" || mew === "What are you mewing about?!")
-				return false;
-			else
+			console.log(mew.test(nonEmpty));
+			if (mew.test(nonEmpty))
 				return true;
+			else
+				return false;
 
-		}
-
-		
-	
+		};
 	})
