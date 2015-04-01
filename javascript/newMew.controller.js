@@ -1,13 +1,22 @@
 angular.module('myApp.controllers')
 	.controller("MewController", function($scope){
-		$scope.validate = function($scope.mewComment){
-			var mew = mewComment.trim();
-			if (mew != "" && mew != "What are you mewing about?!"){
-				$scope.mewSet=true;
-			}
-		}
-		$scope.mewSet = false;
+		var defaultMew = "What are you mewing about?!";
   		$scope.message = "Make a Mew";
-  		$scope.mewComment = "What are you mewing about?!";
+  		$scope.mewComment = defaultMew;
+  		$scope.$watch('inputName',function(newVal){
+		  	if(newVal ==="")
+		     	$scope.form.inputName.$pristine = true;
+		});
+
+		$scope.isValid = function(mewComment){
+			var mew = mewComment;
+			if (mew === "" || mew === "What are you mewing about?!")
+				return false;
+			else
+				return true;
+
+		}
+
+		
 	
 	})
