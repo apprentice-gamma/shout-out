@@ -100,10 +100,14 @@ form.signup input.form-control:focus {
   color: #D45D3D;
   background-color: #080808;
 }
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover{
   color: #567552;
   background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #D45D3D;
+  background-color: #080808;
 }
 
 a.navbar-brand {
@@ -117,7 +121,7 @@ a.navbar-brand:hover {
 /*jumbotron*/
 .jumbotron {
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: inherit;
   background-color: #D45D3D;
 }
