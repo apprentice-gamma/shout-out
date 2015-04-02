@@ -5,7 +5,7 @@ body {
   background-color: #F6E4B6;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #181D21;
     line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
@@ -15,7 +15,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    color: #6B8568;
+    color: #567552;
 }
 
 h1 {
@@ -49,7 +49,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #6B8568;
+    color: #567552;
     text-decoration: none;
     outline: 0;
 }
@@ -102,12 +102,12 @@ form.signup input.form-control:focus {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #6B8568;
+  color: #567552;
   background-color: transparent;
 }
 
 a.navbar-brand {
-	color: #6B8568 !important;
+	color: #567552 !important;
 	font-weight: 900;
 	text-transform: uppercase;
 }
@@ -132,7 +132,7 @@ a.navbar-brand:hover {
   font-size: 80px;
   margin: 0px;
   padding: 0px;
-  color: #6B8568;
+  color: #567552;
 }
 .jumbotron h2,
 .jumbotron .h2 {
@@ -150,7 +150,25 @@ a.navbar-brand:hover {
 .container .jumbotron {
   border-radius: 4px;
 }
+/*partials*/
+.badge {
+  padding: 3px 7px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #D45D3D;
+  background-color: #5E5E56;
+  border-radius: 6px;
+}
 
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 4px;
+  background-color: #fff;
+  border: 2px solid #5E5E56;
+  border-radius: 4px;
+}
 
 /* footer */
 #footer {
