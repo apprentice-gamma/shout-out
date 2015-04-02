@@ -18,6 +18,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #567552;
 }
 
+h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
 h1 {
 	font-size: 40px;
 }
@@ -92,14 +97,7 @@ form.signup input.form-control:focus {
 
 
 /* Nav */
-.navbar-inverse .navbar-nav > .active > a{
-  color: #D45D3D;
-}
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  color: #D45D3D;
-  background-color: #080808;
-}
+
 .navbar-inverse .navbar-nav > li > a:hover{
   color: #567552;
   background-color: transparent;
@@ -121,7 +119,7 @@ a.navbar-brand:hover {
 /*jumbotron*/
 .jumbotron {
   padding: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: inherit;
   background-color: #D45D3D;
 }
@@ -172,6 +170,9 @@ a.navbar-brand:hover {
   background-color: #fff;
   border: 2px solid #5E5E56;
   border-radius: 4px;
+}
+.list-group {
+  margin-bottom: 15px;
 }
 
 /* footer */
