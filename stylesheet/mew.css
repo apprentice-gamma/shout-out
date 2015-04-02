@@ -5,7 +5,7 @@ body {
   background-color: #F6E4B6;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #181D21;
     line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
@@ -15,7 +15,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    color: #6B8568;
+    color: #567552;
 }
 
 h1 {
@@ -38,7 +38,7 @@ p {
 
 
 a {
-    color: #d6ee18;
+    color: #D45D3D;
     word-wrap: break-word;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -49,7 +49,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #6B8568;
+    color: #567552;
     text-decoration: none;
     outline: 0;
 }
@@ -67,17 +67,6 @@ a:after {
 }
 .navbar-inverse .navbar-nav > li > a {
     color: #F6E4B6;
-}
-
-.alignleft {
-    text-align: left;
-}
-.alignright {
-    text-align: right;
-}
-
-.aligncenter {
-    text-align: center;
 }
 
 .btn-theme  {
@@ -113,12 +102,12 @@ form.signup input.form-control:focus {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #6B8568;
+  color: #567552;
   background-color: transparent;
 }
 
 a.navbar-brand {
-	color: #6B8568 !important;
+	color: #567552 !important;
 	font-weight: 900;
 	text-transform: uppercase;
 }
@@ -127,66 +116,64 @@ a.navbar-brand:hover {
 }
 /*jumbotron*/
 .jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
   color: inherit;
   background-color: #D45D3D;
 }
+/*place holder img*/
+.jumbotron img { 
+  display: inline; 
+}
+
 .jumbotron h1,
 .jumbotron .h1 {
+  display: inline;
+  font-size: 80px;
+  margin: 0px;
+  padding: 0px;
+  color: #567552;
+}
+.jumbotron h2,
+.jumbotron .h2 {
+  font-size: 40px;
+  margin: 5px;
+  padding: 0px;
   color: inherit;
 }
 .jumbotron p {
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 21px;
   font-weight: 200;
 }
 .container .jumbotron {
+  border-radius: 4px;
+}
+/*partials*/
+.badge {
+  padding: 3px 7px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #D45D3D;
+  background-color: #5E5E56;
   border-radius: 6px;
 }
 
-/* Header */
-
-#header {	
-	background-color: #444;
-	background: url(../img/main-bg.jpg) no-repeat center top;
-	margin-top: -20px;
-	padding-top: 150px;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 650px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 4px;
+  background-color: #fff;
+  border: 2px solid #5E5E56;
+  border-radius: 4px;
 }
-
-#header h1 {
-	margin-top: 60px;
-	margin-bottom: 15px;
-	color: #fd680e;
-	font-size: 45px;
-	font-weight: 900;
-	letter-spacing: -1px;
-}
-
-h2.subtitle {
-	color: #fd680e;
-	font-size: 20px;
-}
-
 
 /* footer */
 #footer {
 	background: #181D21;
-	padding: 20px 0 5px;
+	padding: 15px 0 5px;
   border-radius: 4px;
 }
 
