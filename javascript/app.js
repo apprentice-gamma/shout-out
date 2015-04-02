@@ -12,5 +12,9 @@ myApp.config(['$routeProvider', function($routeProvider) {
       controller: "MewController",
       templateUrl: '../view/partials/new_mew.html'
    });
+  $routeProvider.when("/mew/confirm", {
+      controller: "ConfirmMewController",
+      templateUrl: '../view/partials/confirm_mew.html'
+   });
    $routeProvider.otherwise({redirectTo: '/'});
 }])

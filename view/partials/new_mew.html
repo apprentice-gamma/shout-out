@@ -4,9 +4,9 @@
   <form novalidate class="simple-form">
     <p>Explain yo'self...
     	<textarea class = "form-control" ng-model="mewComment" ng-minLength="1"></textarea>
-    	<button class="btn btn-success" type="submit">Mew!</button>
+    	<button ng-click="go('/mew/confirm')" class="btn btn-success" type="submit" >Mew!</button>
 		<button class="btn btn-warning" type="cancel">Cancel</button>
-    </p> 
+    </p>
 	
   </form>
   
