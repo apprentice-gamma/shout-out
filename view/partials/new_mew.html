@@ -4,9 +4,11 @@
   <form name="mew" novalidate class="simple-form">
     <p>Explain yo'self...
     	<textarea class="form-control" ng-model="mewComment" ng-minLength="1" required></textarea>
-      <span ng-show="mew.$error.required">But tell us why.</span>
+      <span style="color:red" ng-show="mew.$dirty && mew.$invalid">
+        <span ng-show="mew.$error.required">Please tell us why.</span>
+      </span>
     </p>
-    <button ng-click="go('/mew/confirm')" ng-disabled="mew.$dirty && mew.$invalid" class="btn btn-success" type="submit" >Mew!</button>
+    <button ng-click="go('/mew/confirm')" ng-disabled="mew.$pristine||(mew.$dirty && mew.$invalid)" class="btn btn-success" type="submit" >Mew!</button>
 		<button class="btn btn-warning" type="cancel">Cancel</button>
   </form>
   
