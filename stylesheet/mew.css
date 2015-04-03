@@ -37,7 +37,7 @@ h4 {
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 16px;
 }
 
@@ -97,6 +97,9 @@ form.signup input.form-control:focus {
 
 
 /* Nav */
+.navbar {
+  margin-bottom: 10px;
+}
 
 .navbar-inverse .navbar-nav > li > a:hover{
   color: #567552;
@@ -172,12 +175,13 @@ a.navbar-brand:hover {
   border-radius: 4px;
 }
 .list-group {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 /* footer */
 #footer {
 	background: #181D21;
+  margin-top: 10px;
 	padding: 15px 0 5px;
   border-radius: 4px;
 }
