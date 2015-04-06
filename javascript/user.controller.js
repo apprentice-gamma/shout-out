@@ -1,8 +1,9 @@
 angular.module('myApp.controllers')
-	.controller("UserController", function($scope){
-	  	$scope.all = [{_id: "2342343234",name:"McFluffyton Von Meowers"}, {_id:"12324232",name: "Scratchers"},{_id:"0594593432",name:"Pretty Kitty"}];
+	.controller("UserController", function($scope, $http, UserFactory){
+	  	$scope.all = UserFactory.query();
 		$scope.go = function ( path ) {
   			$location.path( path );
   		}
 	})
 
+//$scope.oneUser = UserFactory.get({user:userId})
