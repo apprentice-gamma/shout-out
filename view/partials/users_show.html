@@ -1,7 +1,7 @@
-<!-- span>{{userName}}</span>
-<a href="#" class="badge">Mew</a> -->
 <h2>{{user.name}} <a href="#/mew/new" class="badge">Mew</a></h2>
 <p>this is a list of shouts(mews)!</p>
 	<ul>
-		<li ng-repeat='shout in user.shoutouts'>{{shout.text}} {{shout.time | date:'-MMMM d, yyyy H:mma' }}</li>
+		<li ng-repeat='shout in user.shoutouts'>{{shout.text}} 
+			<p class="timestamp">{{shout.time | date:'-MMMM d, yyyy h:mma' }}</p>
+		</li>
 	</ul>
