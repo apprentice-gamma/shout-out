@@ -41,6 +41,15 @@ p {
     font-size: 16px;
 }
 
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 2px solid #D45D3D;
+}
+.list-cat {
+  padding-left: 0;
+  list-style-image: url('http://icons.iconarchive.com/icons/iconcreme/halloween/16/Cat-icon.png');
+}
 
 a {
     color: #D45D3D;
