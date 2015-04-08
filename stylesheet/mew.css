@@ -178,6 +178,11 @@ a.navbar-brand:hover {
   margin-bottom: 0px;
 }
 
+/*timeformat*/
+.timestamp {
+  text-indent: 10px;
+}
+
 /* footer */
 #footer {
 	background: #181D21;
