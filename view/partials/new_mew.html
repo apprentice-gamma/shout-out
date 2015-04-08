@@ -3,6 +3,7 @@
 	
   <form name="mew" novalidate class="simple-form">
     <p>Explain yo'self...
+      <input 
     	<textarea class="form-control" ng-model="shout.text" ng-minLength="1" required></textarea>
       <p>{{shout.text}}
       <span style="color:red" ng-show="mew.$dirty && mew.$invalid">
