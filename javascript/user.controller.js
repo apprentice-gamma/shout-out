@@ -5,5 +5,3 @@ angular.module('myApp.controllers')
   			$location.path( path );
   		}
 	})
-
-//$scope.oneUser = UserFactory.get({user:userId})
