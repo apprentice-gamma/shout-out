@@ -33,6 +33,8 @@
     <script type="text/javascript" src="../javascript/user.factory.js"></script>
     <script src="//jpillora.com/xdomain/dist/xdomain.min.js"></script>
     <script type="text/javascript" src="../javascript/mew.factory.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+
 
   </head>
 
@@ -57,7 +59,16 @@
               <li><a href="#/users">Cool Cats</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login with Google</a></li>
+              <li><span id="signinButton">
+                  <span
+                    class="g-signin"
+                    data-callback="signinCallback"
+                    data-clientid="1020993763919-rf8poji82eh4na7ik9nu2bu3nj2smq7n.apps.googleusercontent.com"
+                    data-cookiepolicy="single_host_origin"
+                    data-requestvisibleactions="http://schema.org/AddAction"
+                    data-scope="https://www.googleapis.com/auth/plus.login">
+                  </span>
+                </span></li>
             </ul>
           </div>
         </div>
@@ -69,7 +80,7 @@
               <img src="http://www.clker.com/cliparts/2/d/5/f/11954407231266496009liftarn_Cat_silhouette.svg.hi.png" width="192" height="209">
               <h1 >MEWER<h1>
               <h2>Give a Mew where a Mew is due!</h2>
-              <button type="button" class="btn btn-default">Login with Google</button> 
+<!--               <button type="button" class="btn btn-default">Login with Google</button>  -->
             </div>      
           </div>
         </div>
