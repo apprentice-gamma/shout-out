@@ -1,14 +1,16 @@
 <div id = "newMew">
-	<h2>{{message}}</h2>
+	<h2>{{message}} {{user.name}}</h2>
 	
   <form name="mew" novalidate class="simple-form">
     <p>Explain yo'self...
-    	<textarea class="form-control" ng-model="mewComment" ng-minLength="1" required></textarea>
+      <input 
+    	<textarea class="form-control" ng-model="shout.text" ng-minLength="1" required></textarea>
+    <p>
       <span style="color:red" ng-show="mew.$dirty && mew.$invalid">
         <span ng-show="mew.$error.required">Please tell us why.</span>
       </span>
     </p>
-    <button ng-click="go('/mew/confirm')" ng-disabled="mew.$pristine||(mew.$dirty && mew.$invalid)" class="btn btn-success" type="submit" >Mew!</button>
+    <button ng-click="go('/users/{{user._id}}/mew')" ng-disabled="mew.$pristine||(mew.$dirty && mew.$invalid)" class="btn btn-success" type="submit" >Mew!</button>
 		<button class="btn btn-warning" type="cancel">Cancel</button>
   </form>
   

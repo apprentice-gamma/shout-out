@@ -13,11 +13,11 @@ myApp.config(['$routeProvider', function($routeProvider) {
       controller: "UserIdController",
       templateUrl: '../view/partials/users_show.html'
    });  
-  $routeProvider.when("/mew/new", {
+  $routeProvider.when("/users/:id/mew/new", {
       controller: "MewController",
       templateUrl: '../view/partials/new_mew.html'
    });
-  $routeProvider.when("/mew/confirm", {
+  $routeProvider.when("/users/:id/mew", {
       controller: "ConfirmMewController",
       templateUrl: '../view/partials/confirm_mew.html'
    });
