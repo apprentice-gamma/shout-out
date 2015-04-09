@@ -136,6 +136,7 @@ a.navbar-brand:hover {
   background-color: #D45D3D;
 }
 /*place holder img*/
+
 .jumbotron img { 
   display: inline; 
 }
@@ -165,6 +166,11 @@ a.navbar-brand:hover {
   border-radius: 4px;
 }
 /*partials*/
+
+#about {
+  background-color: #F6E4B6;
+}
+
 .badge {
   padding: 3px 7px;
   font-size: 20px;
