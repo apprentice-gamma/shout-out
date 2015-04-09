@@ -176,7 +176,7 @@ a.navbar-brand:hover {
   font-size: 20px;
   font-weight: 400;
   color: #D45D3D;
-  background-color: #5E5E56;
+  background-color: #181D21;
   border-radius: 6px;
 }
 
@@ -186,7 +186,7 @@ a.navbar-brand:hover {
   padding: 5px 10px;
   margin-bottom: 4px;
   background-color: #fff;
-  border: 2px solid #5E5E56;
+  border: 2px solid #181D21;
   border-radius: 4px;
 }
 .list-group {
