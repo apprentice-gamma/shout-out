@@ -1,4 +1,4 @@
 angular.module('myApp.controllers', [])
 	.controller("MainController", function($scope){
-  		$scope.message = "Welcome to Mewer, where we like to cat.";
+  		$scope.message = "An App to Give Recognition to Your Colleagues";
 	})
