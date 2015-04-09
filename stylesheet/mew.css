@@ -2,7 +2,7 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
 
 body {
-  background-color: #F6E4B6;
+  background-color: #fff;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -168,7 +168,7 @@ a.navbar-brand:hover {
 /*partials*/
 
 #about {
-  background-color: #F6E4B6;
+  background-color: #fff;
 }
 
 .badge {
@@ -207,6 +207,6 @@ a.navbar-brand:hover {
 }
 
 p.copyright {
-	color: #F6E4B6;
+	color: #fff;
 	text-align: center;
 }	
