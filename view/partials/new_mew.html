@@ -10,7 +10,7 @@
         <span ng-show="mew.$error.required">Please tell us why.</span>
       </span>
     </p>
-    <button ng-click="go('/users/{{user._id}}/mew')" ng-disabled="mew.$pristine||(mew.$dirty && mew.$invalid)" class="btn btn-success" type="submit" >Mew!</button>
+    <button ng-click="go()" ng-disabled="mew.$pristine||(mew.$dirty && mew.$invalid)" class="btn btn-success" type="submit" >Mew!</button>
 		<button class="btn btn-warning" type="cancel">Cancel</button>
   </form>
   
