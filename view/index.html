@@ -33,6 +33,8 @@
     <script type="text/javascript" src="../javascript/user.factory.js"></script>
     <script src="//jpillora.com/xdomain/dist/xdomain.min.js"></script>
     <script type="text/javascript" src="../javascript/mew.factory.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+
 
   </head>
 
@@ -57,7 +59,11 @@
               <li><a href="#/users">Cool Cats</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login with Google</a></li>
+              <li><span id="authorize-button">
+                  <span
+                    class="g-signin"
+                  </span>
+                </span></li>
             </ul>
           </div>
         </div>
@@ -69,7 +75,7 @@
               <img src="http://www.clker.com/cliparts/2/d/5/f/11954407231266496009liftarn_Cat_silhouette.svg.hi.png" width="192" height="209">
               <h1 >MEWER<h1>
               <h2>Give a Mew where a Mew is due!</h2>
-              <button type="button" class="btn btn-default">Login with Google</button> 
+<!--               <button type="button" class="btn btn-default">Login with Google</button>  -->
             </div>      
           </div>
         </div>
