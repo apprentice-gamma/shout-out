@@ -2,7 +2,7 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
 
 body {
-  background-color: #fff;
+  background-color: #181D21;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -44,7 +44,7 @@ p {
 hr {
   margin-top: 10px;
   margin-bottom: 10px;
-  border-top: 2px solid #D45D3D;
+  border-top: 2px solid #567552;
 }
 .list-cat {
   padding-left: 0;
@@ -52,7 +52,7 @@ hr {
 }
 
 a {
-    color: #D45D3D;
+    color: #567552;
     word-wrap: break-word;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -133,7 +133,7 @@ a.navbar-brand:hover {
   padding: 20px;
   margin-bottom: 10px;
   color: inherit;
-  background-color: #D45D3D;
+  background-color: #567552;
 }
 /*place holder img*/
 
@@ -167,15 +167,21 @@ a.navbar-brand:hover {
 }
 /*partials*/
 
-#about {
+.viewModel {
   background-color: #fff;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 200;
+  padding: 10px;
 }
 
 .badge {
   padding: 3px 7px;
   font-size: 20px;
   font-weight: 400;
-  color: #D45D3D;
+  color: #567552;
   background-color: #181D21;
   border-radius: 6px;
 }
@@ -184,7 +190,9 @@ a.navbar-brand:hover {
   position: relative;
   display: block;
   padding: 5px 10px;
-  margin-bottom: 4px;
+  margin-bottom: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
   background-color: #fff;
   border: 2px solid #181D21;
   border-radius: 4px;
