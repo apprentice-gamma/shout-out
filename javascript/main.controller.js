@@ -1,8 +1,8 @@
 angular.module('myApp.controllers', [])
-	.controller("MainController", function($scope, UserFactory){
+	.controller("MainController", function($scope, UserFactory, $timeout){
   		$scope.message = "An App to Give Recognition to Your Colleagues";
   		$scope.recentUsers = []
-  		UserFactory.query().$promise.then(function(data) {
+  		$scope.getmews = function() {UserFactory.query().$promise.then(function(data) {
   			var recentUsers = []
   			data.forEach(function(user,index){
 
@@ -13,6 +13,9 @@ angular.module('myApp.controllers', [])
   			})
   			$scope.recentUsers = recentUsers;
   		})
+    }
+
+      $timeout($scope.getmews(), 1000);
   		// allUsers.forEach(function(user) {
   		// 		console.log(user);
   		// })
