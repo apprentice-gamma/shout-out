@@ -128,12 +128,12 @@ form.signup input.form-control:focus {
 }
 
 a.navbar-brand {
-	color: #567552 !important;
+	color: #457596 !important;
 	font-weight: 900;
 	text-transform: uppercase;
 }
 a.navbar-brand:hover {
-    color: #F6E4B6 !important;
+    color: #567552 !important;
 }
 /*jumbotron*/
 .jumbotron {
@@ -180,6 +180,9 @@ a.navbar-brand:hover {
   background-color: #FFF;
 }
 
+.search h3,.search p {
+  display: inline-block;
+}
 
 .badge {
   margin-top: 4px;
