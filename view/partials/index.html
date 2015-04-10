@@ -1,7 +1,7 @@
 <h2>{{message}}</h2>
 <div class="col-md-12" id="about">
 	<div class="row">
-		<div class="col-sm-6">
+		<div class="col-sm-8">
 		<div class="defintion">
 			<p><b>mew</b><sup>1</sup> <span id='phonetic'> |myo͞o| </span></p>
 
@@ -13,10 +13,11 @@
 
 			<p>ORIGIN Middle English: imitative.</p>
 		</div>
-		<div class="col-sm-8">
-			<h2>Recent Mews</h2>
+	</div>
+		<div class="col-sm-4">
+			<h2>RECENT MEWS</h2>
 			<ul>
-				<li ng-repeat="mew in recentUsers"><h4>{{mew.name}}<h4><p>got a mew of "{{mew.shoutouts[mew.shoutouts.length-1].text}}"<p></li>
+				<li class='recentmews' ng-repeat="mew in recentUsers"><h4>{{mew.name}}<h4><p>Been Mewed: "{{mew.shoutouts[mew.shoutouts.length-1].text}}"<p></li>
 			</ul>
 		</div>
 	</div>

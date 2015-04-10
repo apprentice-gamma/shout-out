@@ -35,7 +35,7 @@ h3 {
 }
 
 h4 {
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 20px;
 }
 
@@ -208,6 +208,10 @@ a.navbar-brand:hover {
   text-indent: 20px;
 }
 
+.recentmews p {
+  color: #181D21;
+
+}
 /* footer */
 #footer {
 	background: #fff;
