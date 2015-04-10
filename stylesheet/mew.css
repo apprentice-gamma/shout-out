@@ -180,6 +180,10 @@ a.navbar-brand:hover {
   background-color: #FFF;
 }
 
+.definition {
+  border-right: 2px solid #181D21;
+}
+
 .search h3,.search p {
   display: inline-block;
 }
@@ -209,6 +213,14 @@ a.navbar-brand:hover {
 /*timeformat*/
 .timestamp {
   text-indent: 20px;
+}
+
+h2 a {
+  color: #181D21;
+}
+
+h2 a:hover {
+  color: #457596;
 }
 
 .recentmews p {
