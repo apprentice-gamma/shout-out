@@ -133,6 +133,7 @@ a.navbar-brand:hover {
   padding: 20px;
   margin-bottom: 10px;
   color: inherit;
+  background-image: url("/img/ongWdots.png");
   background-color: #D45D3D;
 }
 /*place holder img*/
@@ -174,19 +175,24 @@ a.navbar-brand:hover {
 .badge {
   padding: 3px 7px;
   font-size: 20px;
-  font-weight: 400;
-  color: #D45D3D;
-  background-color: #5E5E56;
+  font-weight: 500;
+  color: #567552;
+  background-color: #fff;
+  border: 2px solid #D45D3D;
   border-radius: 6px;
 }
-
+a.badge:hover,
+a.badge:focus {
+  color: #567552;
+  text-shadow: 1px 1px;
+  cursor: pointer;
+}
 .list-group-item {
   position: relative;
   display: block;
   padding: 5px 10px;
   margin-bottom: 4px;
   background-color: #fff;
-  border: 2px solid #5E5E56;
   border-radius: 4px;
 }
 .list-group {
