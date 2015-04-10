@@ -13,9 +13,11 @@
 
 			<p>ORIGIN Middle English: imitative.</p>
 		</div>
-		</div>
-		<div class="col-sm-6">
-			<img src="/img/mew.png" alt="Mewer in Action">
+		<div class="col-sm-8">
+			<h2>Recent Mews</h2>
+			<ul>
+				<li ng-repeat="mew in recentUsers"><h4>{{mew.name}}<h4><p>got a mew of "{{mew.shoutouts[mew.shoutouts.length-1].text}}"<p></li>
+			</ul>
 		</div>
 	</div>
 </div>
