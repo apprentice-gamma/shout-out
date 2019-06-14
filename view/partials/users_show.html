@@ -3,6 +3,6 @@
 <h4>Appreciation Station</h4>
 	<ul>
 		<li class="list-cat"ng-repeat='shout in user.shoutouts'>{{shout.text}} 
-			<p class="timestamp">{{shout.time | date:'-MMMM d, yyyy h:mma' }}</p>
+			<p class="timestamp">{{shout.time | date:'MMMM d, yyyy h:mma' }}</p>
 		</li>
 	</ul>

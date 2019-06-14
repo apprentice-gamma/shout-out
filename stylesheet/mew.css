@@ -1,11 +1,12 @@
 /* ==== Google font ==== */
-@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+@import url('http://fonts.googleapis.com/css?family=Josefin+Sans:300, 500, 600');
 
 body {
-  background-color: #F6E4B6;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+  background-color: #Fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
     color: #181D21;
     line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
@@ -13,12 +14,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    color: #567552;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: #457596;
 }
 
 h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -38,21 +41,23 @@ h4 {
 
 p {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 hr {
   margin-top: 10px;
   margin-bottom: 10px;
-  border-top: 2px solid #D45D3D;
+  height: 4px;
+  border-top: 2px solid #595959;
 }
-.list-cat {
+/*.list-cat {
   padding-left: 0;
   list-style-image: url('http://icons.iconarchive.com/icons/iconcreme/halloween/16/Cat-icon.png');
-}
+}*/
+
 
 a {
-    color: #D45D3D;
+    color: #457596;
     word-wrap: break-word;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -76,12 +81,7 @@ a:after {
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
-.navbar-inverse .navbar-brand {
-  color: #F6E4B6;
-}
-.navbar-inverse .navbar-nav > li > a {
-    color: #F6E4B6;
-}
+
 
 .btn-theme  {
   color: #fff;
@@ -106,6 +106,13 @@ form.signup input.form-control:focus {
 
 
 /* Nav */
+.navbar-inverse .navbar-brand {
+  color: #457596;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #457596;
+}
+
 .navbar {
   margin-bottom: 10px;
 }
@@ -116,24 +123,24 @@ form.signup input.form-control:focus {
 }
 
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #D45D3D;
+  color: #457596;
   background-color: #080808;
 }
 
 a.navbar-brand {
-	color: #567552 !important;
+	color: #457596 !important;
 	font-weight: 900;
 	text-transform: uppercase;
 }
 a.navbar-brand:hover {
-    color: #F6E4B6 !important;
+    color: #567552 !important;
 }
 /*jumbotron*/
 .jumbotron {
   padding: 20px;
   margin-bottom: 10px;
   color: inherit;
-  background-color: #D45D3D;
+  background-color: #56deaa;
 }
 /*place holder img*/
 
@@ -144,10 +151,12 @@ a.navbar-brand:hover {
 .jumbotron h1,
 .jumbotron .h1 {
   display: inline;
-  font-size: 80px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 100px;
   margin: 0px;
   padding: 0px;
-  color: #567552;
+  color: #0d0d0d;
 }
 .jumbotron h2,
 .jumbotron .h2 {
@@ -168,14 +177,18 @@ a.navbar-brand:hover {
 /*partials*/
 
 #about {
-  background-color: #F6E4B6;
+  background-color: #FFF;
+}
+
+.search h3,.search p {
+  display: inline-block;
 }
 
 .badge {
-  padding: 3px 7px;
+  margin-top: 4px;
   font-size: 20px;
   font-weight: 400;
-  color: #D45D3D;
+  color: #fff;
   background-color: #5E5E56;
   border-radius: 6px;
 }
@@ -186,8 +199,8 @@ a.navbar-brand:hover {
   padding: 5px 10px;
   margin-bottom: 4px;
   background-color: #fff;
-  border: 2px solid #5E5E56;
-  border-radius: 4px;
+/*  border: 1px solid #457596;*/
+/*  border-radius: 4px;*/
 }
 .list-group {
   margin-bottom: 0px;
@@ -195,18 +208,23 @@ a.navbar-brand:hover {
 
 /*timeformat*/
 .timestamp {
-  text-indent: 10px;
+  text-indent: 20px;
 }
 
+.recentmews p {
+  color: #181D21;
+  padding-left: 30px;
+
+}
 /* footer */
 #footer {
-	background: #181D21;
+	background: #fff;
   margin-top: 10px;
 	padding: 15px 0 5px;
   border-radius: 4px;
 }
 
 p.copyright {
-	color: #F6E4B6;
+	color: #457596;
 	text-align: center;
 }	

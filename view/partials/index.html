@@ -1,7 +1,8 @@
 <h2>{{message}}</h2>
 <div class="col-md-12" id="about">
 	<div class="row">
-		<div class="col-sm-4">
+		<div class="col-sm-8">
+		<div class="defintion">
 			<p><b>mew</b><sup>1</sup> <span id='phonetic'> |myo͞o| </span></p>
 
 			<p>verb: (of a person or a team member) give accolades and acknowledgement to a job well done:<i> after the successful launch the team was mewing with excitment</i>  </p>
@@ -12,10 +13,11 @@
 
 			<p>ORIGIN Middle English: imitative.</p>
 		</div>
-		<div class="col-sm-8">
-			<h2>Recent Mews</h2>
+	</div>
+		<div class="col-sm-4">
+			<h2>RECENT MEWS</h2>
 			<ul>
-				<li ng-repeat="mew in recentUsers"><h4>{{mew.name}}<h4><p>got a mew of "{{mew.shoutouts[mew.shoutouts.length-1].text}}"<p></li>
+				<li class='recentmews' ng-repeat="mew in recentUsers"><h4>{{mew.name}}<h4><p>Was Mewed: "{{mew.shoutouts[mew.shoutouts.length-1].text}}"<p></li>
 			</ul>
 		</div>
 	</div>

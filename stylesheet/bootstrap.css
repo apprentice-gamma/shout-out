@@ -334,7 +334,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 2px solid #eee;
 }
 .sr-only {
   position: absolute;
@@ -2198,8 +2198,8 @@ fieldset[disabled] .btn-info.active {
 }
 .btn-warning {
   color: #fff;
-  background-color: #f0ad4e;
-  border-color: #eea236;
+  background-color: #595959;
+  border-color: #595959;
 }
 .btn-warning:hover,
 .btn-warning:focus,
@@ -4616,13 +4616,14 @@ a.thumbnail.active {
   position: relative;
   display: block;
   padding: 10px 15px;
+  margin-right: 48px;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid #ddd;
+ /* border: 1px solid #ddd;*/
 }
 .list-group-item:first-child {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+/*  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;*/
 }
 .list-group-item:last-child {
   margin-bottom: 0;
@@ -4630,7 +4631,8 @@ a.thumbnail.active {
   border-bottom-left-radius: 4px;
 }
 .list-group-item > .badge {
-  float: right;
+  float: left;
+  margin-right: 48px;
 }
 .list-group-item > .badge + .badge {
   margin-right: 5px;
